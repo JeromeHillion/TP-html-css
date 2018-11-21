@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TP-html-css:war exploded">
+    <output-path>$PROJECT_DIR$/target/cinema</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TP-html-css" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="cinema-static-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="TP-html-css" />
+          </element>
+          <element id="archive" name="TP-html-css-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="TP-html-css" />
+          </element>
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.5" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.1" />
+          <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/cinema/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="TP-html-css/web/Web" />
+    </root>
+  </artifact>
+</component>
