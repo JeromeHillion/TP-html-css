@@ -32,7 +32,10 @@
         </td>
     </c:forEach>
 
+
+
 </table>
+
 </div>
 <%-- <tr>
      <td><div>64</div> <div>&#64;</div> </td>

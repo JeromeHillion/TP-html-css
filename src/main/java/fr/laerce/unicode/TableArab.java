@@ -5,26 +5,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class TablePres extends HttpServlet {
+public class TableArab extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-        ArrayList<Integer> indexAscii = new ArrayList();
-
-        for (int i = 33; i <= 255; i++){
-            indexAscii.add(i);
+        ArrayList<Integer> indexAsciiArab = new ArrayList();
+        for(int iArab = 1536; iArab <= 1776; iArab++){
+            indexAsciiArab.add(iArab);
         }
-/*============pour les besoins de la vue============*/
-        request.setAttribute("indexAscii" , indexAscii);
-        String laVue = "table-unicode.jsp";
+
+        /*============pour les besoins de la vue============*/
+        request.setAttribute("indexAsciiArab" , indexAsciiArab);
+        String laVue = "table-unicode-arabe.jsp";
         getServletConfig().getServletContext()
                 .getRequestDispatcher("/WEB-INF/jsp/"+laVue).forward(request, response);
 
     }
-}
+    }
+

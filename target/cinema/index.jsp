@@ -8,6 +8,7 @@
 <body>
 <h2>Table de caractères Unicode</h2>
 <p><a href="table"> Liste des 256 premiers caractères</a></p>
+<p><a href="tablearabe"> Liste des caractères arabes</a></p>
 
 </body>
 </html>

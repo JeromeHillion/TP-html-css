@@ -1,5 +1,12 @@
 <%--
   Created by IntelliJ IDEA.
+  User: CDI
+  Date: 22/11/2018
+  Time: 13:16
+  To change this template use File | Settings | File Templates.
+--%>
+<%--
+  Created by IntelliJ IDEA.
   User: gide
   Date: 21/11/18
   Time: 15:09
@@ -16,26 +23,23 @@
 <body>
 <h1>Les caractères Ascii de 33 à 255 :</h1>
 <div class="table-responsive">
-<p/>
-<hr width="100%"/>
-
-<table class="table table-striped table-hover table-bordered">
-
-    <c:forEach var="index" items="${indexAscii}">
-
-        <td >
-            <div class="table-success">${index}</div>
-            <div  class="table-info">&#${index}</div>
-            <c:if test="${index%32==0}">
-                <tr></tr>
-            </c:if>
-        </td>
-    </c:forEach>
+    <p/>
+    <hr width="100%"/>
 
 
+    <table class="table table-striped table-hover table-bordered">
 
-</table>
+        <c:forEach var="index_2" items="${indexAsciiArab}">
 
+            <td>
+                <div class="table-success" style="width: 26px; height: 21px;">${index_2}</div>
+                <div  class="table-info" style="width: 26px; height: 21">&#${index_2}</div>
+                <c:if test="${index%300==0}">
+                    <tr></tr>
+                </c:if>
+            </td>
+        </c:forEach>
+    </table>
 </div>
 <%-- <tr>
      <td><div>64</div> <div>&#64;</div> </td>
