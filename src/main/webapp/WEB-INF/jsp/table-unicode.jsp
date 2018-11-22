@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 </head>
 <body>
-<h1>Les caractères de 0 à 255</h1>
+<h1>Les caractères Ascii de 33 à 255 :</h1>
 <div class="table-responsive">
 <p/>
 <hr width="100%"/>
